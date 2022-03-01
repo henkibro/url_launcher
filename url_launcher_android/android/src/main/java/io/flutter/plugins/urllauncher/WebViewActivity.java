@@ -104,13 +104,6 @@ public class WebViewActivity extends Activity {
               return true;
             }
           };
-      
-      val permission = Manifest.permission.CAMERA
-                    val grant = ContextCompat.checkSelfPermission(this@WebViewActivity, permission)
-                    if (grant != PackageManager.PERMISSION_GRANTED) {
-                        val permission_list = arrayOf(permission)
-                        ActivityCompat.requestPermissions(this@WebViewActivity, permission_list, 1);
-                                           }
 
       final WebView newWebView = new WebView(webview.getContext());
       newWebView.setWebViewClient(webViewClient);
