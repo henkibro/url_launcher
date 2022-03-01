@@ -133,6 +133,7 @@ public class WebViewActivity extends Activity {
 
     webview.getSettings().setJavaScriptEnabled(enableJavaScript);
     webview.getSettings().setDomStorageEnabled(enableDomStorage);
+    webview.getSettings().setMediaPlaybackRequiresUserGesture(false);
 
     // Open new urls inside the webview itself.
     webview.setWebViewClient(webViewClient);
